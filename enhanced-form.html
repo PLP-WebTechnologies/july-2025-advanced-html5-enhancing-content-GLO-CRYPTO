@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, nav, main, section, footer {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid #333;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    form {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    form input, form select, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 8px;
+    }
+    form button {
+      width: auto;
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our Enhanced Form Page</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form with validation.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#form">Form</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="features">
+      <h2>Features</h2>
+      <ol type="I">
+        <li>Lists
+          <ul>
+            <li>Ordered lists</li>
+            <li>Unordered lists</li>
+            <li>Nested lists</li>
+          </ul>
+        </li>
+        <li>Tables</li>
+        <li>Media (images & video)</li>
+        <li>Forms with validation</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Sample Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Price</th>
+            <th>Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>$10</td>
+            <td>Email support</td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>$25</td>
+            <td>Email + Chat support</td>
+          </tr>
+          <tr>
+            <td>Enterprise</td>
+            <td>$50</td>
+            <td>24/7 Support</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Media Example</h2>
+      <img src="https://via.placeholder.com/400x200" alt="Placeholder Image">
+      <video controls width="400">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section id="form">
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <!-- Text Input -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+        <!-- Email Input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" placeholder="At least 6 characters" required>
+
+        <!-- Number Input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+
+        <!-- Date Input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Readonly field -->
+        <label for="userid">User ID (auto-assigned):</label>
+        <input type="text" id="userid" name="userid" value="USER12345" readonly>
+
+        <!-- Radio buttons -->
+        <fieldset>
+          <legend>Gender:</legend>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </fieldset>
+
+        <!-- Checkbox -->
+        <label>
+          <input type="checkbox" name="subscribe" value="yes">
+          Subscribe to newsletter
+        </label>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select your country--</option>
+          <option value="us">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="ke">Kenya</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Enter your message here..."></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>&copy; 2025 Enhanced Form Example. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
